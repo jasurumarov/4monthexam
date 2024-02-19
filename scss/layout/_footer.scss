@@ -1,0 +1,131 @@
+@use '../abstracts' as *;
+
+body {
+    footer {
+        padding: 64px 0;
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: start;
+            gap: 95px;
+            .footer-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+                ul {
+                    width: 168px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    gap: 16px;
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #2A2C1F;
+                    }
+                    a {
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #2A2C1F;
+                    }
+                }
+            }
+            .footer-subscribe {
+                margin-left: 30px;
+                h5 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #2A2C1F;
+                    margin-bottom: 10px;
+                }
+                p {
+                    max-width: 379px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #65665C;
+                    margin-bottom: 13.88px;
+                }
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 16px;
+                    input {
+                        width: 241px;
+                        outline: none;
+                        border: 1px solid #E7E8E3;
+                        background: white;
+                        border-radius: 6px;
+                        padding: 12px 14px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #2A2C1F;
+                        &::placeholder {
+                            color: #65665C;
+                        }                   
+                    }
+                    button {
+                        border: 1px solid #CF6F49;
+                        background: #CF6F49;
+                        border-radius: 6px;
+                        padding: 13px 28px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        &:hover {
+                            color: #CF6F49;
+                            background: #FFFFFF;
+                            transition: .3s;
+                        }
+                    }
+                }
+                h6 {
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #65665C;
+                    a {
+                        margin-left: 14px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #65665C;
+                        &:hover {
+                            color: #2A2C1F;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 24px 0;
+        background: #F5F5F2;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            pre {
+                font-size: 14px;
+                line-height: 21px;
+                color: #65665C;
+                display: flex;
+                justify-content: space-between;
+            }
+            div {
+                display: flex;
+                gap: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    footer {
+        .footer-subscribe {
+            margin-left: 0 !important;
+        }
+    }
+}

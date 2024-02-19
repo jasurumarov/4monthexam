@@ -1,0 +1,168 @@
+@use '../abstracts' as *;
+
+.dark  {
+    background: #021934;
+    header {
+        .header-bottom {
+            background: #F5F5F2 !important;
+            a, p, select, button:first-child {
+                color: #2A2C1F !important;
+            }
+
+            button:nth-child(2) {
+                a {
+                    color: #fff !important;
+                    &:hover {
+                        color: #CF6F49 !important;
+                    }
+                }
+            }
+        }
+    }
+    .topics-seeAllBtn {
+        &:hover {
+            color: $color-first !important;
+        }
+    }
+    main {
+        .hero-section {
+            .hero-left {
+                background: #021934 !important;
+                a {
+                    color: #2A2C1F !important;
+                }
+                input {
+                    color: #2A2C1F !important;
+                }
+                button {
+                    &:hover {
+                        color: #CF6F49 !important;
+                    }
+                }
+            }
+        }
+        .proporties-section {
+            background: #021934 !important;
+            .proporties-card {
+                background: #F5F5F2 !important;
+            }
+        }
+    }
+}
+  
+.dark  * {
+  color: white !important;
+}
+
+.dark {
+    .menu-opened + .dark {
+        .nav-list {
+            background: #021934 !important;
+        }
+    }
+    
+    .proporties-section * {
+        color: #2A2C1F !important;
+        h2 {
+            color: white !important;
+        }
+        .proporties-btnGroup {
+            h3 {
+                color: white !important;
+            }
+        }
+    }
+    
+    .comfort-section {
+        .comfort-left {
+            a {
+                color: #2A2C1F !important;
+            }
+        }
+    }
+    
+    .fast-section {
+        .fast-left {
+            a {
+                color: #2A2C1F !important;
+            }
+        }
+    }
+    
+    .location-section {
+        background: #021934 !important;
+        .location-card {
+            background: #F5F5F2 !important;
+            * {
+                color: #2A2C1F !important;
+            }
+        }
+        .proporties-btnGroup {
+            button:first-child {
+                color: #2A2C1F !important;
+            }
+        }
+    }
+    
+    .customers-section {
+        .customers-card {
+            background: #F5F5F2 !important;
+            * {
+                color: #2A2C1F !important;
+            }
+        }
+    }
+    
+    .blog-section {
+        background: #021934 !important;
+        .blog-title {
+            p {
+                color: #2A2C1F !important;
+            }
+        }
+        .blog-btnGroup {
+            button {
+                color: #2A2C1F !important;
+            }
+        }
+        .blog-card {
+            background: #F5F5F2 !important;
+            * {
+                color: #2A2C1F !important;
+            }
+        }
+    }
+    footer {
+        background: #F5F5F2 !important;
+        * {
+            color: #2A2C1F !important;
+        }
+        button {
+            color: white !important;
+            &:hover {
+                color: #CF6F49 !important;
+            }
+        }
+    }
+    .footer-bottom {
+        background: #F5F5F2 !important;
+        * {
+            color: #2A2C1F !important;
+        }
+    }
+}
+
+.dark {
+    #arrow {
+        svg {
+            fill: white !important;
+        }
+    }
+}
+
+#cart {
+    color: #2A2C1F;
+    &:hover {
+        color: #2A2C1F !important;
+    }
+}
